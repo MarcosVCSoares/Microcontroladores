@@ -14,10 +14,14 @@ typedef enum {
     STATE_WAIT_LED1,
     STATE_LED2_TOGGLE,
     STATE_WAIT_LED2,
+    laranja, 
+    vermelho,
+    verde,
+
+    
 } state_t;
 
-void main(void)
-{
+void main(void) {
     int ret;
     state_t current_state = STATE_LED1_TOGGLE;
     int64_t next_event_time = 0;
@@ -36,31 +40,58 @@ void main(void)
         switch (current_state) {
             
             case STATE_LED1_TOGGLE:
-                gpio_pin_toggle_dt(&led1);
+                
+                gpio_pin_toggle_dt(&led1); 
+                printk("verde ");
                 // Define quando o próximo evento deve ocorrer
-                next_event_time = k_uptime_get() + 3000; 
+                next_event_time = k_uptime_get() + 2000; 
                 current_state = STATE_WAIT_LED1;
                 break;
 
             case STATE_WAIT_LED1:
                 if (k_uptime_get() >= next_event_time) {
                     // Após 3s, inverte LED1 e LED2 simultaneamente como no original
-                    gpio_pin_toggle_dt(&led1);
                     gpio_pin_toggle_dt(&led2);
-                    next_event_time = k_uptime_get() + 500;
+                    printk("laranja ");
+                    next_event_time = k_uptime_get() + 1000;
                     current_state = STATE_WAIT_LED2;
                 }
                 break;
 
             case STATE_WAIT_LED2:
+                
+                if (k_uptime_get() >= next_event_time) {
+                    gpio_pin_toggle_dt(&led1);
+                    gpio_pin_toggle_dt(&led2);
+                    printk("apagado ");
+                    next_event_time = k_uptime_get() + 0 ;
+                    current_state = STATE_LED2_TOGGLE;
+                }
+                break;
+
+            case STATE_LED2_TOGGLE:
+                
                 if (k_uptime_get() >= next_event_time) {
                     gpio_pin_toggle_dt(&led2);
-                    next_event_time = k_uptime_get() + 3000;
+                    printk("vermelho ");
+                    next_event_time = k_uptime_get() + 2000 ;
+                    current_state = laranja;
+                }
+                break;
+
+             case laranja:
+                
+                if (k_uptime_get() >= next_event_time) {
+                    gpio_pin_toggle_dt(&led2);
+                    printk("vermelho apagado /n");
+                    next_event_time = k_uptime_get() + 0 ;
                     current_state = STATE_LED1_TOGGLE;
                 }
                 break;
 
+                
             default:
+                printk("entrei no default");
                 current_state = STATE_LED1_TOGGLE;
                 break;
         }

@@ -8,11 +8,12 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Carrinhos/include",
-                "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Carrinhos/src",
-                "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Carrinhos/.pio/build/frdm_kl25z/zephyr/include/generated/zephyr",
+                "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Atividade_2/include",
+                "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Atividade_2/src",
+                "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Atividade_2/lib/pwm",
+                "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Atividade_2/.pio/build/frdm_kl25z/zephyr/include/generated/zephyr",
                 "C:/Users/gabri/.platformio/packages/framework-zephyr/include",
-                "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Carrinhos/.pio/build/frdm_kl25z/zephyr/include/generated",
+                "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Atividade_2/.pio/build/frdm_kl25z/zephyr/include/generated",
                 "C:/Users/gabri/.platformio/packages/framework-zephyr/soc/nxp/kinetis",
                 "C:/Users/gabri/.platformio/packages/framework-zephyr/soc/nxp/kinetis/kl2x",
                 "C:/Users/gabri/.platformio/packages/framework-zephyr/soc/nxp/kinetis/common",
@@ -29,11 +30,12 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Carrinhos/include",
-                    "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Carrinhos/src",
-                    "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Carrinhos/.pio/build/frdm_kl25z/zephyr/include/generated/zephyr",
+                    "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Atividade_2/include",
+                    "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Atividade_2/src",
+                    "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Atividade_2/lib/pwm",
+                    "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Atividade_2/.pio/build/frdm_kl25z/zephyr/include/generated/zephyr",
                     "C:/Users/gabri/.platformio/packages/framework-zephyr/include",
-                    "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Carrinhos/.pio/build/frdm_kl25z/zephyr/include/generated",
+                    "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Atividade_2/.pio/build/frdm_kl25z/zephyr/include/generated",
                     "C:/Users/gabri/.platformio/packages/framework-zephyr/soc/nxp/kinetis",
                     "C:/Users/gabri/.platformio/packages/framework-zephyr/soc/nxp/kinetis/kl2x",
                     "C:/Users/gabri/.platformio/packages/framework-zephyr/soc/nxp/kinetis/common",
@@ -61,7 +63,7 @@
             ],
             "cStandard": "c99",
             "forcedInclude": [
-                "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Carrinhos/.pio/build/frdm_kl25z/zephyr/include/generated/zephyr/autoconf.h",
+                "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Atividade_2/.pio/build/frdm_kl25z/zephyr/include/generated/zephyr/autoconf.h",
                 "C:/Users/gabri/.platformio/packages/framework-zephyr/include/zephyr/toolchain/zephyr_stdint.h",
                 ""
             ],
@@ -74,7 +76,7 @@
                 "-isystem",
                 "C:/Users/gabri/.platformio/packages/framework-zephyr/lib/libc/common/include",
                 "-isystem",
-                "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Carrinhos/.pio/build/frdm_kl25z/modules/picolibc/picolibc/include",
+                "C:/Users/gabri/OneDrive/Documentos/PlatformIO/Projects/Atividade_2/.pio/build/frdm_kl25z/modules/picolibc/picolibc/include",
                 "-isystem",
                 "c:/users/gabri/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/8.2.1/include",
                 "-isystem",
